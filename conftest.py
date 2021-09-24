@@ -20,3 +20,7 @@ def logged_in_session():
         raise ValueError(f"Expected 200, but received {login_resp.status_code}")
 
     return session
+
+@fixture
+def app_url():
+    return "http://127.0.0.1:5000"
